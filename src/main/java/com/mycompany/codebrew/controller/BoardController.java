@@ -65,7 +65,7 @@ public class BoardController {
 		model.addAttribute("pager", pager);
 		model.addAttribute("boardList", boardList);
 		return "board/boardList";
-	}
+	} 
 	
 	//정태환
 	@Secured("ROLE_USER")

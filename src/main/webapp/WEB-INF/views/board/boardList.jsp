@@ -62,19 +62,27 @@ body {
 
 	<div class="main">
 	<!-- 이후에 공지사항이랑 리뷰로 나눠서 사용할 때 사용하시면 됩니다. -->
-		<!-- <div class="left_box ss">
-			<li class="side_bar_first_box ss">
-			    <a href="#" id="noticeLink" onclick="clickedNoticeButton()">
-			        <div class="side_bar mb-1" style="text-align: center;" >공지 사항</div>
-			    </a>
-			</li>
-
-			<li class="side_bar_first_box ss">
-				<a href="#" id="reviewLink" onclick="clickedReviewButton()">
-					<div class="side_bar mb-1" style="text-align: center;">Review</div>
-				</a>
-			</li>
-		</div> -->
+		<div class="left_box ss">
+			<ul class="ul_no_point">
+				<li class="side_bar_first_box ss">
+				    <a href="#" id="noticeLink" onclick="">
+				        <div class="side_bar mb-1" style="text-align: center;" >공지 사항</div>
+				    </a>
+				</li>
+	
+				<li class="side_bar_first_box ss">
+					<a href="#" id="reviewLink" onclick="">
+						<div class="side_bar mb-1" style="text-align: center;">Q & A</div>
+					</a>
+				</li>
+				
+				<li class="side_bar_first_box ss">
+					<a href="#" id="reviewLink" onclick="">
+						<div class="side_bar mb-1" style="text-align: center;">Review</div>
+					</a>
+				</li>
+			</ul>
+		</div>
 
 		<div class="main_text_box mb-3">
 			<div class="first_input_box mb-2">

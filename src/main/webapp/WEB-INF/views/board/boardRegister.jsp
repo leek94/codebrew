@@ -80,7 +80,7 @@
 		document.getElementById("category").value = 1;
 
 		// 클릭시 색상 변경
-		document.getElementById("noticeButton").style.backgroundColor = "#2C4E80";
+		document.getElementById("noticeButton").style.backgroundColor = "#116d58";
 		document.getElementById("noticeButton").style.color = "#fff";
 
 		document.getElementById("reviewButton").style.backgroundColor = "";
@@ -94,7 +94,7 @@
 		document.getElementById("category").value = 2;
 
 		// 클릭시 색상 변경
-		document.getElementById("reviewButton").style.backgroundColor = "#2C4E80";
+		document.getElementById("reviewButton").style.backgroundColor = "#116d58";
 		document.getElementById("reviewButton").style.color = "#fff";
 
 		document.getElementById("noticeButton").style.backgroundColor = "";
@@ -107,17 +107,6 @@ body {
 	font-family: "Do Hyeon", sans-serif;
 	font-weight: 400;
 	font-style: normal;	
-}
-.button_tags.hover_grey.button.register_btn.rounded-1{
-	background:#1f3933 !important;	
-}
-
-.info_box{
-	background:#1f3933 !important;
-	border-radius: 5px !important;
-}
-.register_button.round_box.btn.btn-md{
-	background:#1f3933 !important;
 }
 </style>
 
@@ -134,7 +123,7 @@ body {
         		<button id="noticeButton" class="button_tags hover_grey button register_btn rounded-1" value="1" onclick="clickedNoticeButton()">공지사항</button>
         	</c:if>
         	
-            <button id="reviewButton" class="button_tags hover_grey button register_btn rounded-1" value="2" onclick="clickedReviewButton()" style="background-color:#2C4E80; color:#FFFFFF;">Review</button>
+            <button id="reviewButton" class="button_tags hover_grey button register_btn rounded-1" value="2" onclick="clickedReviewButton()" style="background-color:#116d58; color:#FFFFFF;">Review</button>
         </div>
 
         <div class="info_box">

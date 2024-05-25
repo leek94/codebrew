@@ -209,8 +209,8 @@ function boardCommentLike(bocId, boclState){
 	<div class="container">
 		<div class="d-flex">
 			<div
-				class="border p-5 d-flex flex-column position-sticky top-0 vh-100"
-				style="width: 50%;">
+				class="boardtext border p-5 d-flex flex-column mt-5 vh-100 position-sticky"
+				style="width: 50%; border-radius: 15px;">
 				<div class="d-flex">
 					<div class="h1">${board.boTitle}</div>
 					<div
@@ -221,31 +221,34 @@ function boardCommentLike(bocId, boclState){
 					</div>
 				</div>
 				<hr />
-				<div class="p-4 border shadow flex-grow-1 mb-5" style="width: 100%;">
+				<div class="p-4 border shadow flex-grow-1 mb-4 mt-2" style="width: 100%; border-radius: 15px;">
 					<p>${board.boContent}</p>
 				</div>
 				<c:if test="${board.acId eq user}">
-				<div style="margin-left:420px; margin-bottom:40px;">
-				<a href="${pageContext.request.contextPath}/board/updateRegister?&boId=${board.boId}">
-					<button class="btn btn-success" type="button">수정</button>
-				</a>
-					<form method="post" action="boardDelete" style="display: inline-block;">
-						<input type="hidden" name=boId value="${board.boId}">
-						<button class="btn btn-success" name="boId">삭제</button>
-					</form>
+				<div class="d-flex mb-4">
+					<div class="flex-grow-9"></div>
+					<div class="flex-grow-1">
+						<a href="${pageContext.request.contextPath}/board/updateRegister?&boId=${board.boId}">
+							<button class="btn " style="background: #116d58; color: #fff;" type="button">수정</button>
+						</a>
+						<form method="post" action="boardDelete" style="display: inline-block;">
+							<input type="hidden" name=boId value="${board.boId}">
+							<button class="btn"  style="background: #116d58; color: #fff;"name="boId">삭제</button>
+						</form>
+					</div>
 				</div>
 				</c:if>
 				<div class="input-group shadow" style="width: 100%; height: 15%;">
 					<textarea class="form-control" Id="bocContents" aria-label="With textarea"
 						style="background-color: white;"></textarea>
-					<button class="btn btn-success" onclick="commentRegist('${board.boId}')">댓글 등록</button>
+					<button class="btn"  style="background: #116d58; color: #fff;" onclick="commentRegist('${board.boId}')">댓글 등록</button>
 				</div>
 			</div>
 			<div style="width: 50%">
 				<div class="d-flex justify-content-center p-5">
 					<img
 						src="data:image/jpeg;base64,${board.boImageOut}"
-						alt="" width="auto" height="300px">
+						alt="" width="auto" height="300px" style="border-radius: 10px;">
 				</div>
 				<div class="d-flex flex-grow-1 align-items-center flex-column" id="boardCommentContainer">
 					<div class="h1">Comment</div>
@@ -262,7 +265,7 @@ function boardCommentLike(bocId, boclState){
 								</div>
 								<c:if test="${boardComment.acId eq user}">
 								<div style="width: 100%; height: 30px;"></div>
-								<button type="button" class="btn btn-success" style="float:right;" onclick="boardCommentDelete('${boardComment.bocId}','${boardComment.boId}',this)">삭제</button>
+								<button type="button" class="btn" style="float:right; background: #116d58; color: #fff;" onclick="boardCommentDelete('${boardComment.bocId}','${boardComment.boId}',this)">삭제</button>
 								</c:if>
 							</div>
 						</div>

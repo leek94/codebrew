@@ -6,6 +6,10 @@
     display: flex !important;
     align-items: center !important;
 }
+
+.boardtext{
+	margin-top : 50px;
+}
 .box{
     flex-grow: 1 !important;
 }
@@ -15,6 +19,9 @@
     max-width: 340px; 
     min-width: 340px;
 }
+
+
+
 .box2{
     height: 300px; 
     margin-left: 150px;
